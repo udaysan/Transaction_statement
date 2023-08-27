@@ -1,0 +1,8 @@
+.bankname{
+    font-size: 50px;
+    color: rgb(240, 234, 245);
+    padding-left: 1cm;
+    padding-right: 1cm;
+    background-color: #383c40;
+    width:max-content;
+}

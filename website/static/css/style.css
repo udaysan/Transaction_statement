@@ -1,0 +1,233 @@
+
+body{
+  background-color: rgb(171, 219, 227);
+  }
+
+/* sets the margin of all the element to 10px on all sides*/
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+#login-part {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 1cm;
+    background-color: rgb(171, 219, 227);
+}
+
+
+/* Application name inside the home section. The styling is applied by tag name */
+
+
+  h1{
+    font-size: 50px;
+    color: rgb(240, 234, 245);
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    background-color: #382742;
+    width:max-content;
+  }
+  .topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #382742;
+    text-decoration: underline;
+  }
+
+
+
+/* Container for all the three conversion calculator sections   */
+#all-sections{
+    display: grid;
+    justify-content: auto;
+}
+
+fieldset { 
+  justify-self:auto;
+  justify-content: auto;
+
+}
+
+
+button{
+    font-size: 20px;
+    border: transparent;
+    width: fit-content;
+    background-color: rgb(173, 218, 173);
+    border-radius: 40px;
+    justify-content: center;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/*  panel */
+.b{
+    border-style: solid;
+    background-color: rgb(245, 243, 210);
+    border-top-width: 20px;
+    width: 750px;
+    height: fit-content;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.All{
+    border-top-color: green;
+}
+
+.Net{
+    border-top-color: coral;
+}
+
+.Debit{
+    border-top-color: rgb(0, 85, 255);
+}
+
+.Credit{
+    border-top-color: rgb(89, 161, 13);
+}
+
+.UPI{
+    border-top-color: rgb(255, 162, 0);
+
+}
+
+
+legend {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Floating icon for the home button */
+.iconbutton{
+    width:50px;
+    height:50px;
+    border-radius: 60%;
+    background-color:  #382742;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:40px;
+    left:4px;
+    }
+
+.iconbutton img {
+    width:30px
+}
+    
+footer {
+    background-color: #483355;
+    color:white;
+    position:absolute;
+    bottom: 10px;
+}
+
+figure {
+    float:left;
+    justify-self:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+figcaption {
+    color:black;
+    font-size: 17px;
+}
+
+.dropdown {
+    list-style-type: none;
+    background-color: #0b85ff;
+    align-items:self-start;
+    justify-content: left;
+    position:relative;
+    left:0px;
+    min-width:230px;
+}
+nav ul {
+  list-style-type: none;
+  margin-right:1cm;
+  padding: 0;
+  background-color:  #6d4982;
+  float:left;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color:#382742;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin-right:2cm;
+  padding: 0;
+  background-color:  #6d4982;
+  float:left;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color:#302e32;
+}
+
+/* Dropdown box styles */
+nav ul li.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #382742;
+  width: fit-content;
+  left:0px;
+  min-width:230px;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+

@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+    <nav>
+        <ul >
+            <li class="dropdown">
+                <a href="#drop">Menu</a>
+                <ul id="drop" class="dropdown-content">
+                    <li><a  id="PersonalLoans" href="/PersonalLoans">Personal Loans</a> </li>
+                    <li><a  id="HomeLoans" href="/HomeLoans">Home Loans</a> </li>
+                    <li><a  id="Statements" href="/statements">Statements</a> </li>
+                    <li><a  id="fixedDeposit" href="/fixedDeposit">Fixed Deposit</a> </li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+      <div id="Home-sections">
+        <section id="Home" class="b All">
+            <p>Welcome<p>
+
+        </section>
+
+      </div>
+
+{% endblock %}

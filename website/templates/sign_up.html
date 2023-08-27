@@ -1,0 +1,52 @@
+{% extends "base.html" %} 
+{% block title %}
+Sign-up 
+{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Sign Up</h3>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name"/>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name"/>
+      </div>
+      <div class="form-group">
+        <label for="govName">Name as in government records</label>
+        <input type="text" class="form-control" id="govName" name="govName" placeholder="Enter your full name as in government records"/>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number"/>
+      </div>
+      <div class="form-group">
+        <label for="date_of_birth">Date of birth</label>
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Enter date of birth"/>
+      </div>
+      <div class="form-group">
+        <label for="address">Address </label>
+        <input type="text" class="form-control" id="address" name="address" placeholder="Enter address"/>
+      </div>
+      <div class="form-group">
+        <label for="social_security_number">Aadhar ID</label>
+        <input type="text" class="form-control" id="social_security_number" name="social_security_number" placeholder="Enter Aadhar ID"/>
+      </div>
+    <div class="form-group">
+      <label for="password1">Password</label>
+      <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter password"/>
+    </div>
+    <div class="form-group">
+      <label for="password2">Password (Confirm)</label>
+      <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm password"/>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br><br>
+{% endblock %}

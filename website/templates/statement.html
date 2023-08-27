@@ -1,0 +1,206 @@
+{% extends "base.html" %} 
+{% block title %}
+Statements
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="static/css/style.css">
+<body>
+    <nav>
+        <ul >
+            <li class="dropdown">
+                <a href="#drop">Statement Options</a>
+                <ul id="drop" class="dropdown-content">
+                    <li><a href="#ALLTransactions">ALL transactions</a></li>
+                    <li><a href="#NetBankingTransactions">NetBanking transactions</a></li>
+                    <li><a href="#DebitCardTransactions">Debit card transactions</a></li>
+                    <li><a href="#CreditCardTransactions">Credit card transactions</a></li>
+                    <li><a href="#UPI_transactions">UPI transactions</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav> 
+<div id="all-sections">
+    <div style="clear:both;"></div>
+    <!-- All -->
+    <section id="ALLTransactions" class="b All">
+
+        <div id="ALL">
+            <figure>
+  
+                <img src="static/images/all.jpg" width="300px" height="200px">
+                <figcaption></figcaption>
+              </figure>
+
+            <fieldset id="fieldset" >
+                <legend>ALL Transactions</legend>
+                <label for="ALL Transactions"></label> <br/>
+                <form id="dataForm" method="POST" >
+
+                    <input type="hidden" class="form-control"  id="templateID" name="templateID" value="">
+                    
+                    <label for="FromDate">From:</label><br/>
+                    <input type="date" class="form-control"  id="FromDate" name="FromDate" required><br>
+            
+                    <label for="ToDate">To:</label><br/>
+                    <input type="date" class="form-control"  id="ToDate" name="ToDate" required><br>
+            
+                    <label for="emailadd">Email:</label><br/>
+                    <input type="email" class="form-control"  id="emailadd" name="emailadd" required><br>
+    
+                    <label for="password">Password:</label><br/>
+                    <input type="text" class="form-control"  id="password" name="password"><br><br>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            
+
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+    <!-- Net Banking -->
+    <section id="NetBankingTransactions" class="b Net">
+
+        <div id="Net Banking">
+            <figure>
+  
+                <img src="static/images/net.png" width="300px" height="200px">
+                <figcaption></figcaption>
+              </figure>
+
+            <fieldset id="fieldset">
+                <legend>Net Banking Transactions</legend>
+                <label for="Net Banking Transactions"></label> <br/>
+                <form id="dataForm" method="POST">
+                    <input type="hidden" class="form-control"  id="templateID" name="templateID" value="net banking">
+                    
+                    <label for="FromDate">From:</label><br/>
+                    <input type="date" class="form-control"  id="FromDate" name="FromDate" required><br>
+            
+                    <label for="ToDate">To:</label><br/>
+                    <input type="date" class="form-control"  id="ToDate" name="ToDate" required><br>
+            
+                    <label for="emailadd">Email:</label><br/>
+                    <input type="email" class="form-control"  id="emailadd" name="emailadd" required><br>
+    
+                    <label for="password">Password:</label><br/>
+                    <input type="text" class="form-control"  id="password" name="password"><br><br>
+            
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+    <!-- Debit -->
+    <section id="DebitCardTransactions" class="b Debit">
+
+        <div id="Debit">
+            <figure>
+  
+                <img src="static/images/debit.png" width="300px" height="200px">
+                <figcaption></figcaption>
+              </figure>
+
+            <fieldset id="fieldset" >
+                <legend>Debit card Transactions</legend>
+                <label for="Debit card Transactions"></label> <br/>
+                <form id="dataForm" method="POST">
+                    <input type="hidden" class="form-control"  id="templateID" name="templateID" value="debit">
+                    
+                    <label for="FromDate">From:</label><br/>
+                    <input type="date" class="form-control"  id="FromDate" name="FromDate" required><br>
+            
+                    <label for="ToDate">To:</label><br/>
+                    <input type="date" class="form-control"  id="ToDate" name="ToDate" required><br>
+            
+                    <label for="emailadd">Email:</label><br/>
+                    <input type="email" class="form-control" id="emailadd" name="emailadd" required><br>
+    
+                    <label for="password">Password:</label><br/>
+                    <input type="text" class="form-control"  id="password" name="password"><br><br>
+            
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+    <!-- Credit -->
+    <section id="CreditCardTransactions" class="b Credit">
+
+        <div id="Credit">
+            <figure>
+  
+                <img src="static/images/credit.png" width="300px" height="200px">
+                <figcaption></figcaption>
+              </figure>
+
+            <fieldset id="fieldset">
+                <legend>Credit Card Transactions</legend>
+                <label for="Credit Card Transactions"></label> <br/>
+                <form id="dataForm" method="POST">
+                    <input type="hidden" class="form-control"  id="templateID" name="templateID" value="credit">
+                    
+                    <label for="FromDate">From:</label><br/>
+                    <input type="date" class="form-control"  id="FromDate" name="FromDate" required><br>
+            
+                    <label for="ToDate">To:</label><br/>
+                    <input type="date" class="form-control"  id="ToDate" name="ToDate" required><br>
+            
+                    <label for="emailadd">Email:</label><br/>
+                    <input type="email" class="form-control"  id="emailadd" name="emailadd" required><br>
+    
+                    <label for="password">Password:</label><br/>
+                    <input type="text" class="form-control"  id="password" name="password"><br><br>
+            
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    
+    <div style="clear:both;" ></div>
+    <!-- UPI-->
+    <section id="UPI_transactions" class="b UPI">
+        <div id="UPI" >
+            <figure>
+  
+                <img src="static/images/upi_transactions_india.png" width="300px" height="200px">
+                <figcaption></figcaption>
+              </figure>
+
+            <fieldset id="fieldset" >
+                <legend >UPI Transactions</legend>
+                <label for="UPI_label" ></label> <br/>
+                <form id="dataForm" method="POST" >
+                    <input type="hidden" class="form-control"  id="UPItemplateID" name="templateID" value="upi">
+                    
+                    <label for="FromDate">From:</label><br/>
+                    <input type="date" class="form-control"  id="FromDate" name="FromDate" required><br>
+            
+                    <label for="ToDate">To:</label><br/>
+                    <input type="date" class="form-control"  id="ToDate" name="ToDate" required><br>
+            
+                    <label for="emailadd">Email:</label><br/>
+                    <input type="email" class="form-control"  id="emailadd" name="emailadd" required><br>
+    
+                    <label for="password">Password:</label><br/>
+                    <input type="text" class="form-control"  id="password" name="password"><br><br>
+            
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </fieldset>
+        </div> 
+    </section>
+</div>
+<br>
+
+    <script src="static/js/script.js"></script>
+
+    <div id="go-home" class="iconbutton">
+        <a href="#bankname" style="color:white">Top</a>
+      </div>
+
+</body>
+{% endblock %}
