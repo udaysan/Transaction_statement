@@ -4,7 +4,6 @@ Secure PDF Transaction Statement Generator
 •	Backend technologies: Python 3.11.0, SQLAlchemy 2.0.19
 •	Frontend technologies: HTML5, CSS, JavaScript.
 •	Python Libraries: 
-    o	Python 3.11.0
     o	SQLAlchemy 2.0.19
     o	pyodbc 4.0.39
     o	docx2pdf 0.1.8
