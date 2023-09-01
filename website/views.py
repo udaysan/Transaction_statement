@@ -134,8 +134,8 @@ def statements():
             relative_path_output_word_path = f'website/static/user_statement_files/{current_user.email}_{current_time}.docx'
             output_word_path = os.path.join(current_directory, relative_path_output_word_path) 
             doc.save(output_word_path)
-            email_sender='xyz.bank.35@gmail.com'
-            email_password='kwwupiehbtfyocbc'
+            email_sender=''#enter mail id
+            email_password=''#enter device specific mail password
 
             # Convert the Word document to PDF using ReportLab
             relative_path_output_pdf_path = f'website/static/user_statement_files/{current_user.email}_{current_time}.pdf'
@@ -149,3 +149,21 @@ def statements():
             print("User don't have an account in the bank!")
 
         return render_template("statement.html",customer=current_user)
+
+@views.route('/PersonalLoans',methods=['GET'])
+@login_required
+def PersonalLoans():
+    if request.method=='GET':
+        return render_template("personal_loans.html",customer=current_user)
+    
+@views.route('/HomeLoans',methods=['GET'])
+@login_required
+def HomeLoans():
+    if request.method=='GET':
+        return render_template("home_loans.html",customer=current_user)
+    
+@views.route('/fixedDeposit',methods=['GET'])
+@login_required
+def fixedDeposit():
+    if request.method=='GET':
+        return render_template("fixed_deposite.html",customer=current_user)
